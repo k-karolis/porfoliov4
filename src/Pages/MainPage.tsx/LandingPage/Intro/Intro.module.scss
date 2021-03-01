@@ -1,0 +1,70 @@
+@import "../../../../App.module.scss";
+
+.Intro {
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 150px;
+  max-height: 150px;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 20px;
+  position: absolute;
+  top: calc(47.5% + 60px);
+  left: calc(50% - 300px);
+  color: $darkBlue;
+  z-index: 100;
+  font-weight: 400;
+  transition: $effects;
+}
+
+.BackGround {
+  background-color: $warmWhite;
+  width: 50vw;
+  height: 200px;
+  position: absolute;
+  top: calc(47.5vh);
+  left: calc(50% - 25vw);
+  border-radius: 5px;
+  transform: skewY(-5deg);
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 8px 24px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px,
+    rgba(236, 236, 236, 0.1) 0px 24px 80px;
+  transition: $effects;
+}
+
+.Social {
+  position: absolute;
+  //   top: calc(50% - 100px);
+  bottom: 0;
+  z-index: 10;
+  transform: skewY(5deg);
+  transition: $effects;
+}
+
+.DarkMode .BackGround {
+  background-color: $darkBlue;
+  box-shadow: rgba(34, 40, 49, 0.1) 0px 8px 24px,
+    rgba(34, 40, 49, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.1) 0px 24px 80px;
+  transition: $effects;
+}
+
+.DarkMode .Intro {
+  color: $warmWhite;
+  transition: $effects;
+}
+
+.Toggler {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  transition: $effects;
+}
+
+.Link {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  //   z-index: 100;
+  transition: $effects;
+}

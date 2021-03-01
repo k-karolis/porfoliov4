@@ -1,0 +1,105 @@
+@import "../../../App.module.scss";
+.LandingPage {
+  height: 100vh;
+  position: absolute;
+  left: 50vw;
+}
+
+.DarkMode .Cover {
+  background-color: rgba(34, 40, 49, 0.5);
+  transition: $effects;
+}
+
+.LandingIntro {
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top: 25%;
+  right: calc(50% - 50px);
+  z-index: 100;
+  line-height: 10px;
+  transition: $effects;
+}
+
+.FirstName {
+  font-weight: 900;
+  letter-spacing: 15px;
+  color: $warmWhite;
+  position: absolute;
+  top: 50px;
+  right: -65px;
+  transition: $effects;
+}
+
+.DarkMode .FirstName {
+  color: $darkBlue;
+  transition: $effects;
+}
+
+.LastName {
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: $brightOrange;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  transition: $effects;
+}
+
+.DarkMode .LastName {
+  color: $brightOrange;
+  transition: $effects;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 5px;
+  position: absolute;
+  right: -50px;
+  top: 150px;
+  font-family: "Caveat", cursive;
+  transition: $effects;
+}
+
+.DarkMode .Title {
+  transition: $effects;
+  color: $darkBlue;
+}
+
+.Selfie {
+  object-fit: cover;
+  height: 200px;
+  position: absolute;
+  right: -275px;
+  top: 25px;
+  width: 200px;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 8px 14px,
+    rgba(236, 236, 236, 0.1) 0px 16px 66px,
+    rgba(236, 236, 236, 0.1) 0px 4px 80px;
+  border-radius: 100%;
+  transition: $effects;
+}
+
+.Overlay {
+  height: 202px;
+  position: absolute;
+  right: -276px;
+  top: 24px;
+  width: 202px;
+  border-radius: 100%;
+  background-color: rgba(34, 40, 49, 0.2);
+  transition: $effects;
+  z-index: 100;
+}
+
+.DarkMode .Overlay {
+  background-color: rgba(236, 236, 236, 0.2);
+  transition: $effects;
+}
+
+.DarkMode .Selfie {
+  transition: $effects;
+  box-shadow: rgba(34, 40, 49, 0.1) 0px 8px 24px,
+    rgba(34, 40, 49, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.1) 0px 24px 80px;
+}

@@ -1,0 +1,36 @@
+.Logo {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 75px);
+}
+.Box {
+  width: 120px;
+}
+
+.OrangeLine {
+  position: absolute;
+  left: calc(50% - 53px);
+  top: -0px;
+  height: 79.5px;
+}
+
+.FirstBlue {
+  position: absolute;
+  left: calc(50% - 40px);
+  top: -0px;
+  height: 79.5px;
+}
+
+.SecondBlue {
+  position: absolute;
+  left: calc(50% + 10px);
+  top: -45px;
+  transform: rotate(45deg);
+}
+
+.ThirdBlue {
+  position: absolute;
+  left: calc(50% + 50px);
+  top: calc(50% - 25px);
+  transform: rotate(-225deg);
+}

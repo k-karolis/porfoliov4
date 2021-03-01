@@ -1,0 +1,14 @@
+@import "../../../../App.module.scss";
+.Link {
+  color: $brightOrange;
+  letter-spacing: 10px;
+  transform: skewY(-5deg);
+  width: 100px;
+  font-size: 1rem;
+  transition: $effects;
+}
+
+.DarkMode .Link {
+  color: $darkBlue;
+  transition: $effects;
+}
