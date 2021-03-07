@@ -1,38 +1,18 @@
 @import "../../App.module.scss";
 
-$transitionDuration: 0.6s;
-
-.Icon {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-}
-
 .Toggle {
   position: absolute;
+  // top: 15px;
+  // right: 15px;
+
+  cursor: pointer;
+}
+
+.Sun,
+.Moon {
+  position: fixed;
   top: 10px;
   right: 10px;
-  width: 45px;
-  height: 30px;
-  border-radius: 35px;
-  transition: all $transitionDuration cubic-bezier(0.42, 0, 0.58, 1);
-  background-color: $darkBlue;
-  box-shadow: rgba(34, 40, 49, 0.1) 0px 8px 24px,
-    rgba(34, 40, 49, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.1) 0px 24px 80px;
-}
-
-.LightMode {
-  color: green;
-  background-color: rgba(236, 236, 236, 0.55);
-  transition: all $transitionDuration cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-.DarkMode {
-  border-radius: 5px solid red;
-  transition: all $transitionDuration cubic-bezier(0.42, 0, 0.58, 1);
-  > .Toggle {
-    background-color: $warmWhite;
-    box-shadow: rgba(34, 40, 49, 0.1) 0px 8px 24px,
-      rgba(34, 40, 49, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.1) 0px 24px 80px;
-  }
+  height: 25px;
+  width: 25px;
 }

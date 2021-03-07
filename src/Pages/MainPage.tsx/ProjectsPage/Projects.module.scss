@@ -1,1 +1,23 @@
 @import "../../../App.module.scss";
+
+$randomNumber: random(50) + px;
+
+.ProjectsPage {
+  display: flex;
+  flex-direction: column;
+  transition: $effects;
+}
+
+.LightMode {
+  transition: $effects;
+  height: 100vh;
+  width: 100vw;
+  background-color: $darkBlue;
+}
+
+.DarkMode {
+  transition: $effects;
+  height: 100vh;
+  width: 100vw;
+  background-color: $warmWhite;
+}

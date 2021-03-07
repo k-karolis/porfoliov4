@@ -1,0 +1,9 @@
+@import "../App.module.scss";
+
+.Sun {
+  filter: drop-shadow(2.5px 0px 15px rgba(34, 40, 49, 1));
+}
+
+.Moon {
+  filter: drop-shadow(2.5px 0px 15px rgba(236, 236, 236, 1));
+}

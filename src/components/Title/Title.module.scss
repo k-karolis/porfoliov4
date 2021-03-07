@@ -1,0 +1,41 @@
+@import "../../App.module.scss";
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.First {
+  display: flex;
+  flex-direction: row;
+  font-weight: 900;
+  letter-spacing: 15px;
+  color: $warmWhite;
+  transition: $effects;
+  line-height: 50px;
+}
+
+.DarkMode .First {
+  color: $darkBlue;
+  transition: $effects;
+}
+
+.Second {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: -25px;
+  font-weight: 400;
+  letter-spacing: 25px;
+  color: $brightOrange;
+  transition: $effects;
+}
+
+.DarkMode .Second {
+  color: $brightOrange;
+  transition: $effects;
+}

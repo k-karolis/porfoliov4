@@ -1,70 +1,68 @@
 @import "../../../../App.module.scss";
 
-.Intro {
-  min-width: 600px;
-  max-width: 600px;
-  min-height: 150px;
-  max-height: 150px;
-  font-size: 1.5rem;
-  text-align: center;
-  letter-spacing: 5px;
-  line-height: 20px;
-  position: absolute;
-  top: calc(47.5% + 60px);
-  left: calc(50% - 300px);
-  color: $darkBlue;
-  z-index: 100;
-  font-weight: 400;
-  transition: $effects;
+.DarkMode,
+.LightMode {
+  display: flex;
+  flex-direction: column;
 }
 
 .BackGround {
-  background-color: $warmWhite;
-  width: 50vw;
-  height: 200px;
-  position: absolute;
-  top: calc(47.5vh);
-  left: calc(50% - 25vw);
+  display: flex;
+  flex-direction: column;
+  width: 700px;
   border-radius: 5px;
   transform: skewY(-5deg);
-  box-shadow: rgba(236, 236, 236, 0.1) 0px 8px 24px,
-    rgba(236, 236, 236, 0.1) 0px 16px 56px,
-    rgba(236, 236, 236, 0.1) 0px 24px 80px;
+  background-color: $warmWhite;
+  box-shadow: $whiteShadow;
   transition: $effects;
+  z-index: 50;
+  border-left: solid $brightOrange 2px;
+  border-top: solid $brightOrange 2px;
 }
 
-.Social {
-  position: absolute;
-  //   top: calc(50% - 100px);
-  bottom: 0;
-  z-index: 10;
+.Intro {
+  padding-top: 35px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  line-height: 20px;
+  color: $darkBlue;
+  font-weight: 400;
   transform: skewY(5deg);
   transition: $effects;
 }
 
-.DarkMode .BackGround {
-  background-color: $darkBlue;
-  box-shadow: rgba(34, 40, 49, 0.1) 0px 8px 24px,
-    rgba(34, 40, 49, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.1) 0px 24px 80px;
+div .Link {
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
   transition: $effects;
+  transform: skewY(-5deg);
+  z-index: 10;
+}
+
+div .Social {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  transition: $effects;
+}
+
+.DarkMode .BackGround {
+  transition: $effects;
+  box-shadow: $blackShadow;
+  background-color: $darkBlue;
+  color: $warmWhite;
 }
 
 .DarkMode .Intro {
   color: $warmWhite;
-  transition: $effects;
-}
-
-.Toggler {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  transition: $effects;
-}
-
-.Link {
-  position: absolute;
-  bottom: -15px;
-  right: 0;
-  //   z-index: 100;
   transition: $effects;
 }

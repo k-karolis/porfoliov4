@@ -2,28 +2,40 @@
 
 $duration: 0.1s;
 
-.Social {
-  transform: skew(5deg, -5deg);
+a {
+  outline: none;
 }
-.Social svg {
-  z-index: 10;
-  display: inline;
+
+.Social {
+  display: flex;
+  flex-direction: row;
   transition: all $duration cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .Social svg path {
-  filter: drop-shadow(0px 3px 3px rgba(34, 40, 49, 0.2));
+  filter: drop-shadow(0px 3px 3px rgba(34, 40, 49, 0.5));
+}
+
+.linkedin path,
+.mail path,
+.github path,
+.twitter path {
   transition: all $duration cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.Social svg:hover path {
+.linkedin:hover path,
+.mail:hover path,
+.github:hover path,
+.twitter:hover path {
   fill: $brightOrange;
   transition: all $duration cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.Social svg:hover {
-  fill: $brightOrange;
-  margin-bottom: 5px;
+.linkedin:hover svg,
+.mail:hover svg,
+.github:hover svg,
+.twitter:hover svg {
+  transform: scale(1.1);
   transition: all $duration cubic-bezier(0.42, 0, 0.58, 1);
 }
 

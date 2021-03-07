@@ -1,11 +1,15 @@
 @import "../../../../App.module.scss";
+$animate: all 0.2s ease-in-out;
+
 .Link {
   color: $brightOrange;
   letter-spacing: 10px;
-  transform: skewY(-5deg);
-  width: 100px;
   font-size: 1rem;
   transition: $effects;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .DarkMode .Link {
