@@ -1,6 +1,6 @@
 import styles from "./Main.module.scss";
 import LandingPage from "./LandingPage/LandingPage";
-import ProjectsPage from "./ProjectsPage/ProjectsPage";
+// import ProjectsPage from "./ProjectsPage/ProjectsPage";
 import ThemeToggle from "../../components/ThemeToggle/ThemeToggle";
 
 export default function Main() {
