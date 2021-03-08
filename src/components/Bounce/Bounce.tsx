@@ -29,7 +29,7 @@ export default function Bounce(props: any) {
                   variants={box}
                   initial="hidden"
                   animate={{
-                    color: theme ? "rgb(34, 40, 49)" : "rgb(242, 163, 101)",
+                    color: theme ? "rgb(242, 163, 101)" : "rgb(236, 236, 236)",
                     scale: 1,
                     opacity: 1,
                     x: 0,
