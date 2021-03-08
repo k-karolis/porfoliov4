@@ -5,11 +5,11 @@ import Sun from "../../assets/Sun";
 import Moon from "../../assets/Moon";
 import { motion, AnimatePresence } from "framer-motion";
 import useSound from "use-sound";
-import lightOn from "../../assets/lightOn.mp3";
+import light from "../../assets/lightOn.mp3";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeMode);
-  const [on] = useSound(lightOn, { volume: 0.1 });
+  const [on] = useSound(light, { volume: 0.1 });
 
   const duration = 1.1;
 
