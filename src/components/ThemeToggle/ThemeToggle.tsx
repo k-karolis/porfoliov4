@@ -5,7 +5,7 @@ import Sun from "../../assets/Sun";
 import Moon from "../../assets/Moon";
 import { motion, AnimatePresence } from "framer-motion";
 import useSound from "use-sound";
-import light from "../../assets/lightOn.mp3";
+import light from "../../assets/light.mp3";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeMode);
