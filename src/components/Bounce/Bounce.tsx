@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const box = {
   hidden: {
     opacity: 0,
-    // x: -5,
     scale: -0.25,
   },
 };
