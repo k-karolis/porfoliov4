@@ -18,12 +18,16 @@ export default function Intro() {
               layout
               key={1}
               initial={{
+                // skewY: -5,
+                // scaleY: 0,
                 opacity: 0,
               }}
               animate={{
+                // scaleY: 1,
+                // skewY: -5,
                 opacity: 1,
                 transition: {
-                  duration: 0.5,
+                  duration: 1,
                 },
               }}
             >

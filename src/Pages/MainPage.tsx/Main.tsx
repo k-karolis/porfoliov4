@@ -1,6 +1,6 @@
 import styles from "./Main.module.scss";
 import LandingPage from "./LandingPage/LandingPage";
-// import ProjectsPage from "./ProjectsPage/ProjectsPage";
+import ProjectsPage from "./ProjectsPage/ProjectsPage";
 import ThemeToggle from "../../components/ThemeToggle/ThemeToggle";
 
 export default function Main() {
@@ -12,7 +12,9 @@ export default function Main() {
       <div className={styles.Landing}>
         <LandingPage />
       </div>
-      <div className={styles.Projects}>{/* <ProjectsPage /> */}</div>
+      <div className={styles.Projects}>
+        <ProjectsPage />
+      </div>
     </div>
   );
 }

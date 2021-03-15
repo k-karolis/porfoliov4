@@ -16,7 +16,7 @@ export default function LandingPage() {
           <div className={styles.LandingPage}>
             <div className={styles.LandingIntro}>
               <div className={styles.Titles}>
-                <Title first="Karolis" second="Kimtys" />
+                <Title first='Karolis' second='Kimtys' />
                 <div className={styles.Title}>
                   <Bounce bounce={"Junior "} />
                   <Bounce bounce={"Front-End"} />
@@ -28,7 +28,7 @@ export default function LandingPage() {
               <motion.img
                 className={styles.Selfie}
                 src={selfie}
-                alt="Selfie"
+                alt='Selfie'
                 layout
                 key={1}
                 initial={{
@@ -39,6 +39,7 @@ export default function LandingPage() {
                   scale: 1,
                   // opacity: 1,
                   transition: {
+                    delay: 0.5,
                     duration: 0.5,
                   },
                 }}

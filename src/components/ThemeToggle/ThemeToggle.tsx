@@ -37,9 +37,9 @@ export default function ThemeToggle() {
                     className={styles.Sun}
                     layout
                     key={1}
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
+                    initial='hidden'
+                    animate='visible'
+                    exit='hidden'
                     variants={sun}
                   >
                     <Sun />
@@ -49,9 +49,9 @@ export default function ThemeToggle() {
                     className={styles.Moon}
                     layout
                     key={2}
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
+                    initial='hidden'
+                    animate='visible'
+                    exit='hidden'
                     variants={moon}
                   >
                     <Moon />

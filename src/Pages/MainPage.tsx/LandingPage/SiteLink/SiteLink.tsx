@@ -23,17 +23,17 @@ export default function SiteLink() {
             className={styles.Link}
             key={uuidv4()}
             variants={link}
-            initial="hidden"
+            initial='hidden'
             animate={{
               opacity: 1,
               y: 0,
               transition: {
-                delay: 0.5,
+                delay: 1,
                 duration: 0.25,
                 ease: [0.42, 0, 0.58, 1],
               },
             }}
-            exit="hidden"
+            exit='hidden'
           >
             www.karoliskimtys.com
           </motion.small>

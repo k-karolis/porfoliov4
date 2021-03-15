@@ -1,0 +1,113 @@
+@import "../../../../App.module.scss";
+
+.ProjectCards {
+  display: flex;
+  flex-direction: row;
+}
+.DarkMode .SmallLeft,
+.DarkMode .ProjectCard1,
+.DarkMode .ProjectCard2,
+.DarkMode .ProjectCard3,
+.DarkMode .SmallRight {
+  background-color: $darkBlue;
+}
+
+.SmallLeft {
+  margin: -25px;
+  width: 150px;
+  height: 250px;
+  border-radius: 5px;
+  transform: skewY(-7.5deg) rotateY(-25deg);
+  background-color: $warmWhite;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 20px 25px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.25) 0px 20px 25px,
+    rgba(34, 40, 49, 0.25) 0px 16px 56px;
+  transition: $effects;
+  z-index: 50;
+  border-left: solid $brightOrange 3px;
+  border-top: solid $brightOrange 2px;
+}
+
+.ProjectCard1 {
+  margin: -25px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  transform: skewY(-5deg) rotateY(-15deg);
+  background-color: $warmWhite;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 20px 25px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.25) 0px 20px 25px,
+    rgba(34, 40, 49, 0.25) 0px 16px 56px;
+  transition: $effects;
+  z-index: 50;
+  border-left: solid $brightOrange 2px;
+  border-top: solid $brightOrange 2px;
+}
+
+.ProjectCard2 {
+  margin: -15px;
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  //   transform: skewY(-5deg) rotateY(-15deg);
+  background-color: $warmWhite;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 20px 25px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.25) 0px 20px 25px,
+    rgba(34, 40, 49, 0.25) 0px 16px 56px;
+  transition: $effects;
+  z-index: 50;
+  border-left: solid $brightOrange 2px;
+  border-top: solid $brightOrange 2px;
+  border-right: solid $brightOrange 2px;
+}
+
+.ProjectCard3 {
+  margin: -25px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  transform: skewY(5deg) rotateY(15deg);
+  background-color: $warmWhite;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 20px 25px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.25) 0px 20px 25px,
+    rgba(34, 40, 49, 0.25) 0px 16px 56px;
+  transition: $effects;
+  z-index: 40;
+  border-right: solid $brightOrange 2px;
+  border-top: solid $brightOrange 2px;
+}
+
+.SmallRight {
+  margin: -25px;
+  width: 150px;
+  height: 250px;
+  border-radius: 5px;
+  transform: skewY(7.5deg) rotateY(25deg);
+  background-color: $warmWhite;
+  box-shadow: rgba(236, 236, 236, 0.1) 0px 20px 25px,
+    rgba(236, 236, 236, 0.1) 0px 16px 56px, rgba(34, 40, 49, 0.25) 0px 20px 25px,
+    rgba(34, 40, 49, 0.25) 0px 16px 56px;
+  transition: $effects;
+  z-index: 30;
+  border-right: solid $brightOrange 3px;
+  border-top: solid $brightOrange 2px;
+}
+.SmallLeft:hover,
+.ProjectCard1:hover {
+  transform: skewY(-2.5deg) rotateY(0deg);
+  margin: 30px;
+  transition: $effects;
+}
+
+.ProjectCard2:hover {
+  transform: skewY(0deg) rotateY(0deg);
+  margin: 30px;
+  transition: $effects;
+}
+
+.ProjectCard3:hover,
+.SmallRight:hover {
+  transform: skewY(2.5deg) rotateY(0deg);
+  margin: 30px;
+  transition: $effects;
+}

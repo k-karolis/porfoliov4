@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "./Title.module.scss";
 import { ThemeMode } from "../ThemeProvider/ThemeProvider";
 import { motion } from "framer-motion";
@@ -12,6 +12,25 @@ const box = {
 
 export default function Title(props: any) {
   const { theme } = useContext(ThemeMode);
+
+  const first = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: {
+      opacity: 0,
+      scale: 0.65,
+      // x: 50,
+    },
+  };
+
+  const second = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: {
+      opacity: 0,
+      scale: 0.65,
+      // x: -50,
+    },
+  };
+
   return (
     <ThemeMode.Consumer>
       {(context) => (
@@ -25,24 +44,35 @@ export default function Title(props: any) {
                     className={theme ? styles.DarkMode : styles.LightMode}
                   >
                     <motion.div
-                      layout
                       key={index}
-                      variants={box}
-                      initial="hidden"
-                      animate={{
-                        color: theme ? "rgb(34, 40, 49)" : "rgb(236, 236, 236)",
-                        scale: 1,
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                          delay: index * 0.05,
-                          duration: 1.5,
-                          ease: [0.42, 0, 0.58, 1],
-                        },
+                      variants={first}
+                      transition={{
+                        duration: 1,
+                        ease: [0.42, 0, 0.58, 1],
                       }}
-                      exit="hidden"
                     >
-                      <div key={index}>{char}</div>
+                      <motion.div
+                        layout
+                        key={index}
+                        variants={box}
+                        initial='hidden'
+                        animate={{
+                          color: theme
+                            ? "rgb(34, 40, 49)"
+                            : "rgb(236, 236, 236)",
+                          scale: 1,
+                          opacity: 1,
+                          x: 0,
+                          transition: {
+                            delay: index * 0.05,
+                            duration: 1.5,
+                            ease: [0.42, 0, 0.58, 1],
+                          },
+                        }}
+                        exit='hidden'
+                      >
+                        <div key={index}>{char}</div>
+                      </motion.div>
                     </motion.div>
                   </div>
                 );
@@ -59,26 +89,36 @@ export default function Title(props: any) {
                       className={theme ? styles.DarkMode : styles.LightMode}
                     >
                       <motion.div
-                        layout
                         key={index}
-                        variants={box}
-                        initial="hidden"
-                        animate={{
-                          color: theme
-                            ? "rgb(34, 40, 49)"
-                            : "rgb(242, 163, 101)",
-                          scale: 1,
-                          opacity: 1,
-                          x: 0,
-                          transition: {
-                            delay: index * 0.05,
-                            duration: 1.5,
-                            ease: [0.42, 0, 0.58, 1],
-                          },
+                        variants={second}
+                        transition={{
+                          delay: 0.25,
+                          duration: 1,
+                          ease: [0.42, 0, 0.58, 1],
                         }}
-                        exit="hidden"
                       >
-                        <div key={index}>{char}</div>
+                        <motion.div
+                          layout
+                          key={index}
+                          variants={box}
+                          initial='hidden'
+                          animate={{
+                            color: theme
+                              ? "rgb(34, 40, 49)"
+                              : "rgb(242, 163, 101)",
+                            scale: 1,
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                              delay: index * 0.05,
+                              duration: 1.5,
+                              ease: [0.42, 0, 0.58, 1],
+                            },
+                          }}
+                          exit='hidden'
+                        >
+                          <div key={index}>{char}</div>
+                        </motion.div>
                       </motion.div>
                     </div>
                   );
