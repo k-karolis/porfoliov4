@@ -35,7 +35,9 @@ export default function SocialIcons() {
                   transition: {
                     delay: 0.6,
                     duration: 0.5,
-                    ease: [0.42, 0, 0.58, 1],
+
+                    type: "spring",
+                    stiffness: 100,
                   },
                 }}
                 exit="hidden"
@@ -71,7 +73,8 @@ export default function SocialIcons() {
                   transition: {
                     delay: 0.7,
                     duration: 0.5,
-                    ease: [0.42, 0, 0.58, 1],
+                    type: "spring",
+                    stiffness: 100,
                   },
                 }}
                 exit="hidden"
@@ -107,7 +110,8 @@ export default function SocialIcons() {
                   transition: {
                     delay: 0.8,
                     duration: 0.5,
-                    ease: [0.42, 0, 0.58, 1],
+                    type: "spring",
+                    stiffness: 100,
                   },
                 }}
                 exit="hidden"
@@ -143,7 +147,8 @@ export default function SocialIcons() {
                   transition: {
                     delay: 0.9,
                     duration: 0.5,
-                    ease: [0.42, 0, 0.58, 1],
+                    type: "spring",
+                    stiffness: 100,
                   },
                 }}
                 exit="hidden"

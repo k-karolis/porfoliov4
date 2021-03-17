@@ -20,20 +20,22 @@ export default function SiteLink() {
       {(context) => (
         <div className={theme ? styles.DarkMode : styles.LightMode}>
           <motion.small
+            layout
             className={styles.Link}
             key={uuidv4()}
             variants={link}
-            initial='hidden'
+            initial="hidden"
             animate={{
               opacity: 1,
               y: 0,
               transition: {
                 delay: 1,
-                duration: 0.25,
-                ease: [0.42, 0, 0.58, 1],
+                // duration: 0.25,
+                type: "spring",
+                stiffness: 100,
               },
             }}
-            exit='hidden'
+            exit="hidden"
           >
             www.karoliskimtys.com
           </motion.small>

@@ -55,7 +55,7 @@ export default function Title(props: any) {
                         layout
                         key={index}
                         variants={box}
-                        initial='hidden'
+                        initial="hidden"
                         animate={{
                           color: theme
                             ? "rgb(34, 40, 49)"
@@ -66,10 +66,11 @@ export default function Title(props: any) {
                           transition: {
                             delay: index * 0.05,
                             duration: 1.5,
-                            ease: [0.42, 0, 0.58, 1],
+                            type: "spring",
+                            stiffness: 100,
                           },
                         }}
-                        exit='hidden'
+                        exit="hidden"
                       >
                         <div key={index}>{char}</div>
                       </motion.div>
@@ -101,7 +102,7 @@ export default function Title(props: any) {
                           layout
                           key={index}
                           variants={box}
-                          initial='hidden'
+                          initial="hidden"
                           animate={{
                             color: theme
                               ? "rgb(34, 40, 49)"
@@ -110,12 +111,13 @@ export default function Title(props: any) {
                             opacity: 1,
                             x: 0,
                             transition: {
-                              delay: index * 0.05,
-                              duration: 1.5,
-                              ease: [0.42, 0, 0.58, 1],
+                              delay: index * 0.1,
+
+                              type: "spring",
+                              stiffness: 100,
                             },
                           }}
-                          exit='hidden'
+                          exit="hidden"
                         >
                           <div key={index}>{char}</div>
                         </motion.div>

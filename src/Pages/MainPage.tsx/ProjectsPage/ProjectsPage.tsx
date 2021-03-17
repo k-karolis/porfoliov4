@@ -12,7 +12,9 @@ export default function ProjectsPage() {
       {(context) => (
         <div className={theme ? styles.DarkMode : styles.LightMode}>
           <div className={styles.ProjectsPage}>
-            <Title first='Personal' second='Projects' />
+            <div className={styles.Title}>
+              <Title first="Personal" second="Projects" />
+            </div>
             <div className={styles.Cards}>
               <Cards />
             </div>

@@ -44,7 +44,8 @@ export default function Bounce(props: any) {
                   transition={{
                     delay: index * 0.05,
                     duration: 1.5,
-                    ease: [0.42, 0, 0.58, 1],
+                    type: "spring",
+                    stiffness: 100,
                   }}
                   ref={ref}
                 >
@@ -52,7 +53,7 @@ export default function Bounce(props: any) {
                     layout
                     key={index}
                     variants={box}
-                    initial='hidden'
+                    initial="hidden"
                     animate={{
                       color: theme
                         ? "rgb(242, 163, 101)"
@@ -63,10 +64,11 @@ export default function Bounce(props: any) {
                       transition: {
                         delay: index * 0.05,
                         duration: 1.5,
-                        ease: [0.42, 0, 0.58, 1],
+                        type: "spring",
+                        stiffness: 1000,
                       },
                     }}
-                    exit='hidden'
+                    exit="hidden"
                   >
                     <div key={index}>{char}</div>
                   </motion.div>

@@ -6,6 +6,15 @@
   align-items: center;
   justify-content: center;
   transition: $effects;
+
+  position: relative;
+}
+
+.Title {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 400px);
 }
 
 .LightMode {
@@ -23,9 +32,5 @@
 }
 
 .Cards {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: center;
-  margin-top: 75px;
+  margin-top: 150px;
 }
